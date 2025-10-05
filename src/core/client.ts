@@ -11,8 +11,7 @@ import path from "path";
 
 import { logger } from "../utils/logger";
 
-import { Command } from "./command";
-import { Event } from "./event";
+import { Command, Event } from "./";
 
 export class ExtendedClient extends Client {
   public commands = new Collection<string, Command>();

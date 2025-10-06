@@ -1,6 +1,6 @@
-import { Event, type ExtendedClient } from "../core";
+import { Event, type ExtendedClient } from "../../core";
 
-import { logger } from "../utils/logger";
+import { logger } from "../../utils/logger";
 
 class ClientReadyEvent extends Event<"clientReady"> {
   name = "clientReady" as const;

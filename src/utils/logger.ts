@@ -7,6 +7,12 @@ export const logger = pino({
       colorize: true,
       singleLine: true,
       levelFirst: true,
+      translateTime: "HH:MM:ss.l",
+      ignore: "pid,hostname",
     },
   },
 });
+
+if (process.stdout.setDefaultEncoding) {
+  process.stdout.setDefaultEncoding("utf-8");
+}
